@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "A Node-RED node to host a local DrawSvg service",
     "dependencies": {
+        "unzipper": "0.10.5"
     },
     "author": {
         "name": "Bart Butenaers"
