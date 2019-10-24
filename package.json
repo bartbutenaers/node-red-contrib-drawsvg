@@ -35,7 +35,7 @@
         "nodes": {
             "drawsvg-local": "drawsvg_local.js"
         }
-    }
+    },
     "scripts": {
         "postinstall": "echo 'Hello World!'",
     },
