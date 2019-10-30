@@ -27,8 +27,9 @@
         inputs: 1,
         outputs: 1,
         icon: "drawsvg.png",
+        paletteLabel:"DrawSvg local",
         label: function() {
-            return this.name || "DrawSvg service";
+            return this.name || "DrawSvg local";
         },
         oneditprepare: function() {
             
@@ -40,9 +41,10 @@
 </script>
 
 <script type="text/x-red" data-help-name="drawsvg-local">
-    <p>A Node-RED node to host a local DrawSvg service.</p>
+    <p>A Node-RED node to host a local <a target="_blank" href="http://www.drawsvg.org/home-en.html#tools">DrawSvg</a> service.</p> 
     <p><b>Only a single node of this type is required!!!!</b></p>
-    <p>When this Node-RED flow editor is available e.g. at http://yourmachine:1880/ then the local DrawSvg service will be available at http://yourmachine:1880/drawsvg_local/edrawsvg.html</p>
+    <p><strong>!!! DrawSvg is free software. DrawSvg IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED !!!</strong></p>
+    <p>When this Node-RED flow editor is available e.g. at <em>http://yourmachine:1880/</em> then the local DrawSvg service will be available at <em>http://yourmachine:1880/drawsvg_local/edrawsvg.html</em></p>
     <h4>Name</h4>
     <div style="padding-left: 15px">
         The name of this node 
