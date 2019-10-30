@@ -14,19 +14,36 @@
  * limitations under the License.
  **/
 module.exports = function(RED) {
+    const fs = require('fs');
+    const unzipper = require('unzipper');
 
     function DrawSvgLocalNode(config) {
         RED.nodes.createNode(this, config);
         
         var node = this;
         
-        node.on("input", function(msg) {   
-
-        });
-
-        node.on("close", function() {
-        
-        });
+        try {
+            var zipFilePath = __dirname + "/lib/edrawsvg_edrawsvg.zip";
+            var uncompressedDir = __dirname + "/lib/uncompressed";
+            
+            // When there is a zip file available (containing DrawSvg), then unzip it to the 'uncompressed' directory.
+            // Don't do anything when the 'uncompressed' directory already exists, because then another instance of this node is doing that already...
+            if (fs.existsSync(zipFilePath) && !fs.existsSync(uncompressedDir)) {
+                node.log("Uncompressing DrawSvg zip file");
+                fs.mkdirSync(uncompressedDir);
+                
+                fs.createReadStream(zipFilePath)
+                    .pipe(unzipper.Extract({ path: uncompressedDir }))
+                    .on('finish', function() {
+                        // Delete the zip file, after it has been unzipped to the 'uncompressed' directory.
+                        // This way the zip file is only unzipped if this npm module is being updated
+                        fs.unlinkSync(zipFilePath); 
+                    });
+            }
+        } 
+        catch(err) {
+            node.trace(err);
+        }
     }
 
     RED.nodes.registerType("drawsvg-local", DrawSvgLocalNode);
@@ -34,11 +51,11 @@ module.exports = function(RED) {
     // Make all the static resources from this node public available (in the flow editor).
     RED.httpAdmin.get('/drawsvg_local/*', function(req, res){
         var options = {
-            root: __dirname /*+ '/static/'*/,
+            root: __dirname + "/lib/uncompressed",
             dotfiles: 'deny'
         };
        
         // Send the requested file to the client
-        res.sendFile(req.params[0], options)
+        res.sendFile(req.params[0], options);
     });
 }
