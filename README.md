@@ -4,7 +4,9 @@ A Node-RED node to host a local DrawSvg service.
 Special thanks to [Stephen McLaughlin](https://github.com/Steve-Mcl), my partner in crime for the SVG integration in Node-RED !
 Most credits for this node go to Joseph Liard, the author of [DrawSvg](#DrawSvg-drawing-editor) for providing us an offline version of his SVG drawing editor!
 
-***!!! DrawSvg is free software. DrawSvg IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED !!!***
+***!!! DrawSvg is free software !!!***
+
+***!!! DrawSvg IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED !!!***
 
 ## Install
 Run the following npm command in your Node-RED user directory (typically ~/.node-red):
