@@ -57,3 +57,7 @@ For most users the online DrawSvg cloud service will be sufficient, but in some 
    + By using a local service, the DrawSvg content will be downloaded *inside* the existing Node-RED http(s) connection.  As a result there shouldn't appear any mixed content errors.
    
       ![image](https://user-images.githubusercontent.com/14224149/67990805-43a81300-fc37-11e9-9011-8164adf2bab7.png)
+
+## Versions
+
++ Version 1.1.0 offers DrawSvg version 7.6: extra layer manager
