@@ -34,7 +34,7 @@ As soon as the blue button has been clicked, the local URL (from the Settings ta
 
 When your Node-RED flow editor is available e.g. at *http://yourmachine:1880/*, then the local DrawSvg service will be available at *http://yourmachine:1880/drawsvg_local/edrawsvg.html*.
  
-***Be aware that only a single node-rec-contrib-drawsvg node is required!!!!***
+***Be aware that only a single node-red-contrib-drawsvg node is required!!!!***
 
 Caution: Be aware that this service uses around **65 Mbyte** of your storage!
 
