@@ -59,5 +59,7 @@ For most users the online DrawSvg cloud service will be sufficient, but in some 
       ![image](https://user-images.githubusercontent.com/14224149/67990805-43a81300-fc37-11e9-9011-8164adf2bab7.png)
 
 ## Versions
+See the DrawSvg [release notes](https://www.drawsvg.org/home/release-notes.html) to see the new features in every release.
 
-+ Version 1.1.0 offers DrawSvg version 7.6: extra layer manager
++ Version 1.1.0 offers DrawSvg version 7.6
++ Version 1.2.0 offers DrawSvg version 8.0
