@@ -14,6 +14,11 @@ Run the following npm command in your Node-RED user directory (typically ~/.node
 npm install node-red-contrib-drawsvg
 ```
 
+## Support my Node-RED developments
+Please buy my wife a coffee to keep her happy, while I am busy developing Node-RED stuff for you ...
+
+<a href="https://www.buymeacoffee.com/bartbutenaers" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy my wife a coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
 ## Node usage
 We have implemented this node to work close together with our [node-red-contrib-ui-svg](https://github.com/bartbutenaers/node-red-contrib-ui-svg/edit/master/README.md) node:
 
@@ -63,3 +68,4 @@ See the DrawSvg [release notes](https://www.drawsvg.org/home/release-notes.html)
 
 + Version 1.1.0 offers DrawSvg version 7.6
 + Version 1.2.0 offers DrawSvg version 8.0
++ Version 1.3.0 offers DrawSvg version 9.5
