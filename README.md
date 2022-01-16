@@ -5,8 +5,18 @@ Special thanks to [Stephen McLaughlin](https://github.com/Steve-Mcl), my partner
 Most credits for this node go to Joseph Liard, the author of [DrawSvg](#DrawSvg-drawing-editor) for providing us an offline version of his SVG drawing editor!
 
 ***!!! DrawSvg is free software !!!***
-
 ***!!! DrawSvg IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED !!!***
+
+## Update: DrawSvg 9.5 is only partly free
+Some users reported that starting from DrawSvg version 9.5, there are now two separate profiles:
++ The ***basic*** profile is still free, but is a limited version.
++ The ***expert*** profile requires (after a trial period) a subscription via [patreon](https://www.patreon.com/drawsvg) at 4 euros per month.
+
+Unfortunately it seems that some existing options (e.g. "layers") are now only available in the expert profile.  So if you need those, you will need to subscribe at patreon.  Or you can install an old version of this node (from within your .node-red folder) like this:
+```
+npm install node-red-contrib-drawsvg@1.2.0
+```
+However note that this way you will be forced to keep using the old DrawSvg 8.0 version ;-( 
 
 ## Install
 Run the following npm command in your Node-RED user directory (typically ~/.node-red):
